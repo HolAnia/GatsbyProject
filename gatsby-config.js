@@ -46,6 +46,7 @@ module.exports = {
         fonts: [`Teko\:200, 400, 500, 600, 700`],
         display: `swap`,
       } 
-    }
+    },
+    `gatsby-plugin-netlify-cms`
   ],
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { getImage, GatsbyImage} from 'gatsby-plugin-image';
 
 const IndexPage = ({ data }) => {
   console.log(data.fileInformation.edges)
@@ -16,7 +15,7 @@ const IndexPage = ({ data }) => {
       <div>
       {data.fileInformation.edges.map(({ node }) => {
           return (
-            <img src={node.publicURL}/>
+            <img src={ node.publicURL } alt = {node.base} />
           )
           }
         )}
